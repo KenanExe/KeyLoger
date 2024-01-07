@@ -1,0 +1,19 @@
+{
+  "name": "KenAdBlocker",
+  "description": "Best ad blocker.",
+  "version": "6.6.6",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
